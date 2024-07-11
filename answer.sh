@@ -10,7 +10,7 @@ cd
 cd geekationWorkspace
 
 # 4. `LinuxCommandPractice`というディレクトリを作成して、`LinuxCommandPractice`に移動してください。
-mkdir path LinuxCommandPractice
+mv LinuxCommandPractice
 
 # 5. カレントディレクトリのパスを表示してください。
 ls
@@ -32,26 +32,26 @@ ls -a
 
 
 # 8. `LinuxCommandPractice`ディレクトリ内に`practice_dir_1`ディレクトリを作成してください。
-mkdir practice_dir_1
+mkdir ./practice_dir_1
 
 # 9. `LinuxCommandPractice`ディレクトリ内に`practice_dir_1`ディレクトリが作成されていることを確認(表示)してください。
-ls
+ls 
 
 # 10. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`practice_dir_1`内に`practice_dir_2`というディレクトリを作成してください。**但し、相対パスを使用してください。**
-mkdir ./ practice_dir_1 practice_dir_2
-touch ./practice_dir_2 practice_dir_1
+mkdir ./practice_dir_1/practice_dir_2
+
 # 11. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`practice_dir_1`内に`practice_dir_2`ディレクトリが作成されていることを確認(表示)してください。**但し、相対パスを使用してください。**
-mkdir ./ practice_dir_1 practice_dir_2
+ls practice_dir_1
 
-# 12. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`./practice_dir_1/practice_dir_2`ディレクトリ内に`./.txt`、`practice_file2.txt`というファイルを**一回のコマンドで**作成してください。**但し、相対パスを使用してください。**
-touch ./LinuxCommandPractice practice_file1.txt practice_file2.txt
+# 12. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`./practice_dir_1/practice_dir_2`ディレクトリ内に`practice_file1.txt`、`practice_file2.txt`というファイルを**一回のコマンドで**作成してください。**但し、相対パスを使用してください。**
+touch ./practice_dir_2/practice_file1.txt/practice_file2.txt
 
-# 13 `practice_dir_2`に移動してください。**但し、相対パスを使用してください。**
-cd ../../..
+# 13 `practice_dir_2practice_dir_2`に移動してください。**但し、相対パスを使用してください。**
+cd ./
 
 
 # 14. `practice_file1.txt`を2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ**移動**してください。**但し、相対パスを使用してください。**
-cd ../..
+practice_file1.txtadd commit push ../..
 
 # 15. `practice_file2.txt`を2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ**コピー**してください。**但し、相対パスを使用してください。**
 cp practice_file2.txt ../..
