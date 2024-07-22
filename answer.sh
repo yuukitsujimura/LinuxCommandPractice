@@ -14,7 +14,7 @@ mv LinuxCommandPractice
 
 # 5. カレントディレクトリのパスを表示してください。
 ls
-
+mmm
 # 6. 次に、下の画像のようにGithubで`LinuxCommandPractice`という名前のリポジトリを作成してください。
 # 以下のGithubリポジトリ作成時の初期コマンドは書き換えなくてOKです。7に進んでください。
 # ここからGithubリポジトリ作成時の初期コマンド
