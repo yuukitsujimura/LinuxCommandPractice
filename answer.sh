@@ -10,11 +10,13 @@ cd
 cd geekationWorkspace
 
 # 4. `LinuxCommandPractice`というディレクトリを作成して、`LinuxCommandPractice`に移動してください。
-mv LinuxCommandPractice
+mkdir LinuxCommandPractice
+
+cd LinuxCommandPractice
 
 # 5. カレントディレクトリのパスを表示してください。
 ls
-mmm
+
 # 6. 次に、下の画像のようにGithubで`LinuxCommandPractice`という名前のリポジトリを作成してください。
 # 以下のGithubリポジトリ作成時の初期コマンドは書き換えなくてOKです。7に進んでください。
 # ここからGithubリポジトリ作成時の初期コマンド
@@ -44,20 +46,19 @@ mkdir ./practice_dir_1/practice_dir_2
 ls practice_dir_1
 
 # 12. `LinuxCommandPractice`ディレクトリ内から**移動せずに**、`./practice_dir_1/practice_dir_2`ディレクトリ内に`practice_file1.txt`、`practice_file2.txt`というファイルを**一回のコマンドで**作成してください。**但し、相対パスを使用してください。**
-touch ./practice_dir_2/practice_file1.txt/practice_file2.txt
+touch practice_dir_1/practice_dir_2/{practice_file1.txt,practice_file2.txt}
 
-# 13 `practice_dir_2practice_dir_2`に移動してください。**但し、相対パスを使用してください。**
-cd ./
-
+# 13 `practice_dir_2`に移動してください。**但し、相対パスを使用してください。**
+cd practice_dir_1/practice_dir_2 
 
 # 14. `practice_file1.txt`を2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ**移動**してください。**但し、相対パスを使用してください。**
-practice_file1.txtadd commit push ../..
+mv practice_file1.txt ../../
 
 # 15. `practice_file2.txt`を2つ上の階層のディレクトリ(`LinuxCommandPractice`)へ**コピー**してください。**但し、相対パスを使用してください。**
-cp practice_file2.txt ../..
+cp practice_file2.txt ../../
 
 # 16. カレントディレクトリの`practice_file2.txt`を削除してください。**但し、相対パスを使用してください。**
-rm -r ../../practice_file2.txt
+rm ractice_file2.txt
 
 # 17. `practice_file2.txt`が削除されていることを確認(表示)してください。
 ls
@@ -73,5 +74,5 @@ vi practice_file1.txt
 
 # 21. `practice_file1.txt`に書き込んだ内容を出力してください。
 cat practice_file1.txt
-I'm good at Linux commands!
+
 
